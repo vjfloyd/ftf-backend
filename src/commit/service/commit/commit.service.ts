@@ -6,7 +6,7 @@ import { Octokit } from 'octokit';
 export class CommitService {
   async getAllCommits(): Promise<CommitResponse[]> {
     const octokit = new Octokit({
-      auth: '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',
+      auth: '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',
     });
     const { data } = await octokit.request(
       'GET /repos/vjfloyd/ftf-backend/commits',
